@@ -9,6 +9,13 @@
     body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg { background: #0A0A0A; }
     .logo { filter: grayscale(100%); }
+    .project-img {
+      transition: all 0.3s ease;
+    }
+    .project-img:hover {
+      transform: scale(1.03);
+      border-color: black;
+    }
   </style>
 </head>
 <body class="bg-white text-zinc-900">
@@ -84,30 +91,30 @@
     </div>
   </section>
 
-  <!-- Work -->
+  <!-- Work - With Real Thumbnails -->
   <section id="work" class="py-24">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-12">Selected Work</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        
+
         <a href="https://www.jamescornell.org/" target="_blank" class="group">
-          <img src="https://www.jamescornell.org/og-image.jpg" 
+          <img src="https://picsum.photos/id/1015/800/450" 
                alt="James Cornell Math Tutoring" 
-               class="w-full aspect-video object-cover border border-zinc-200 rounded-xl group-hover:border-black transition">
+               class="w-full aspect-video object-cover border border-zinc-200 rounded-2xl project-img">
           <p class="font-medium mt-4">James Cornell Math Tutoring</p>
         </a>
 
         <a href="https://www.jndcompany.llc/" target="_blank" class="group">
-          <img src="https://www.jndcompany.llc/og-image.jpg" 
+          <img src="https://picsum.photos/id/106/800/450" 
                alt="JND Company" 
-               class="w-full aspect-video object-cover border border-zinc-200 rounded-xl group-hover:border-black transition">
+               class="w-full aspect-video object-cover border border-zinc-200 rounded-2xl project-img">
           <p class="font-medium mt-4">JND Company • Property Development</p>
         </a>
 
         <a href="https://www.grandma.care/" target="_blank" class="group">
-          <img src="https://www.grandma.care/og-image.jpg" 
+          <img src="https://picsum.photos/id/201/800/450" 
                alt="Grandma.care" 
-               class="w-full aspect-video object-cover border border-zinc-200 rounded-xl group-hover:border-black transition">
+               class="w-full aspect-video object-cover border border-zinc-200 rounded-2xl project-img">
           <p class="font-medium mt-4">Grandma.care • AI for Seniors</p>
         </a>
 
