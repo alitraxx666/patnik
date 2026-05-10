@@ -9,6 +9,7 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg { background: #0A0A0A; }
+    .logo { filter: grayscale(100%); }
   </style>
 </head>
 <body class="bg-white text-zinc-900">
@@ -17,7 +18,7 @@
   <nav class="bg-white border-b sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="logo.png" alt="Patnik Creative" class="h-9">
+        <img src="logo.png" alt="Patnik Creative" class="h-12 logo">
       </div>
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
         <a href="#about" class="hover:text-black transition">About</a>
@@ -35,12 +36,12 @@
   <!-- Hero -->
   <section class="hero-bg text-white py-28">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <img src="logo.png" alt="Patnik Creative" class="h-24 mx-auto mb-10">
+      <img src="logo.png" alt="Patnik Creative" class="h-32 mx-auto mb-10 logo">
       <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-8">
         Modern websites<br>for small businesses.
       </h1>
       <p class="text-xl text-zinc-400 max-w-md mx-auto mb-12">
-        Nicholas & Patrick • Clean design. Clear results.
+        Clean design. Clear results.
       </p>
       <a href="#contact" 
          class="inline-block border border-white text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-white hover:text-black transition">
@@ -87,11 +88,20 @@
   <!-- Work -->
   <section id="work" class="py-24">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-4">Selected Work</h2>
-      <p class="text-center text-zinc-500 mb-12">First projects launching in 2026</p>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="aspect-video bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-400 text-xl">Project One</div>
-        <div class="aspect-video bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-400 text-xl">Project Two</div>
+      <h2 class="text-4xl font-bold text-center mb-12">Selected Work</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <a href="https://www.jamescornell.org/" target="_blank" class="group">
+          <div class="aspect-video bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-400 text-xl mb-3 group-hover:border-black transition">jamescornell.org</div>
+          <p class="font-medium">James Cornell Math Tutoring</p>
+        </a>
+        <a href="https://www.jndcompany.llc/" target="_blank" class="group">
+          <div class="aspect-video bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-400 text-xl mb-3 group-hover:border-black transition">jndcompany.llc</div>
+          <p class="font-medium">JND Company</p>
+        </a>
+        <a href="https://www.grandma.care/" target="_blank" class="group">
+          <div class="aspect-video bg-zinc-100 border border-zinc-200 flex items-center justify-center text-zinc-400 text-xl mb-3 group-hover:border-black transition">grandma.care</div>
+          <p class="font-medium">Grandma.care</p>
+        </a>
       </div>
     </div>
   </section>
@@ -120,7 +130,7 @@
 
   <!-- Footer -->
   <footer class="py-12 border-t text-center text-sm text-zinc-400">
-    © 2026 Patnik Creative • Nicholas & Patrick
+    © 2026 Patnik Creative
   </footer>
 
 </body>
